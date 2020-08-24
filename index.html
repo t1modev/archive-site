@@ -1,42 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Tim blog</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<title>Timoha Website</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script src="https://kit.fontawesome.com/a28d8bfb2b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      
-      <h1>Timofiy Denisyuk</h1>
-      <p class="lead">… или же “Timoha” =)</p>
-    </div>
+	<div class="banner">
+		<video autoplay muted loop>
+			<source src="video/background.mp4" type="video/mp4">
+		</video>
 
-    <ul class="sidebar-nav">
-      <li class="sidebar-nav-item"><a href="/">Блог</a></li>
-      
-      <li class="sidebar-nav-item"><a href="/post/">Гитхаб</a></li>
-      
-      <li class="sidebar-nav-item"><a href="/about-me/">О себе</a></li>
-      
-      <li class="sidebar-nav-item"><a href="/tools/">Утилиты</a></li>
-      
-      <li class="sidebar-nav-item"><a href="/contacts/">Контакты</a></li>
-      
-    </ul>
+		<div class="content">
+			<h1>Timoha Website</h1>
+			<section>
+			<div class="block1">
+				<img src="img/tim.gif">
+				<hr width="295">
+				<div class="text">
+				<span id="time">####.##.## ##:##</span>
+			<script>
+			    function updateTime() {
+			        var timeBlock = document.getElementById("time");
+			        var date = new Date();
 
-   
-<div class='footer'>
-    <p>Copyright © 2020 <a href="/license/">License</a><br>
-       Powered by PyTim</p>
-   </div>
-  </div>
-</div>
+			        var monts = ((date.getMonth() + 1) < 10 ? "0" + (date.getMonth() + 1) : (date.getMonth() + 1));
+			        var days = (date.getDate() < 10 ? "0" + date.getDate() : date.getDate());
 
-	<div class="content">
-  Контент
-</div>
+			        var hours = (date.getHours() < 10 ? "0" + date.getHours() : date.getHours());
+			        var minutes = (date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes());
+			        var seconds = (date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds());
+
+			        timeBlock.innerHTML = days + "." + monts + "." + date.getFullYear() + " " + hours + ":" + minutes + ":" + seconds;
+			    }
+
+			    updateTime();
+			    setInterval(updateTime, 500);
+			</script>
+		</div>
+				<hr width="295">
+				<h2>Links: </h2>
+				<hr width="295">
+				<button type="button1" onClick="window.open('https://t.me/PyTim');">Telegram</button>
+				<button type="button2" onclick="window.open('https://github.com/t1mosha');">Github</button>
+				<button type="button2" onclick="window.open('https://instagram.com/timofiyofficial');">Instagram</button>
+				<button type="button2" onclick="window.open('https://twitter.com/pytim_');">Twitter</button>
+			</div>
+		</section>
 </body>
 </html>
