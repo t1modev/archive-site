@@ -5,9 +5,8 @@
         <meta property="og:title" content="Timoha">
         <meta property="og:locale" content="en_EU">
         <meta property="og:description" content="Timoha's site">
-        <meta property="og:type" content="blog" />
-        <meta property="og:url" content="//timoha.site" />
-        <meta property="og:image" content="//img/tim.gif" />
+        <meta property="og:url" content="https://timoha.site" />
+        <meta property="og:image" content="img/tim.gif" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="img/tim.gif" type="image/gif">
         <script src="https://sindresorhus.com/devtools-detect/index.js"></script>
@@ -56,7 +55,7 @@
             <div class="popup">
                 <h1>Donate</h1>
                 <p align="center">
-                    <h3><span class="font-size=larger">Отправляя донат, вы поддерживаете автора и оплачиваете ему ужин.</span></h3>                    
+                    <h3><span class="font-size=larger">Отправляя донат, вы поддерживаете автора и даете мотивацию делать новые и интересные проекты</span></h3>                    
                     <h2>Select payment method</h2>
                     <p align="center">
                         <input type="button" class="btn" value="QIWI" onclick="location.href='https://qiwi.com/n/TIMOHADEN'">
@@ -101,16 +100,8 @@
         </header>
     </body>
     <script>
-        $("#name").text(getComputedStyle(document.body).getPropertyValue('--name'))
-        $("#description").text(getComputedStyle(document.body).getPropertyValue('--description'))
-        if (getComputedStyle(document.body).getPropertyValue('--has-pasxalka-work') == "true") {
-            if(window.devtools.isOpen) { window.location.href = getComputedStyle(document.body).getPropertyValue('--pasxalka'); }
-            window.addEventListener('devtoolschange', event => { window.location.href = getComputedStyle(document.body).getPropertyValue('--pasxalka'); });
-        }
-    </script>
-    <script>
         var t = new Typed('#description', {
-            strings: ['Timothy', '14 years old, grade 9', 'I write bots, sites, I also do arduino', 'love coding', 'Слава Україні!'],
+            strings: ['Timothy', '14 years old, grade 9', 'I write bots, sites, I also do arduino', 'love coding','Сайт писал не я', 'Слава Україні!'],
             typeSpeed: 100,
             backSpeed: 0,
             cursorChar: '|',

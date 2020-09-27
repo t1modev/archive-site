@@ -2,9 +2,11 @@
 	<head>
 		<meta charset="utf-8">
         <title>Timoha > Projects</title>
-        <meta property="og:title" content="Timoha > projects">
+        <meta property="og:title" content="Timoha">
         <meta property="og:locale" content="en_EU">
-        <meta property="og:description" content="Timoha's projects">
+        <meta property="og:description" content="Timoha's > projects">
+        <meta property="og:url" content="https://timoha.site" />
+        <meta property="og:image" content="img/tim.gif" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="img/tim.gif" type="image/gif">
 		<script src="https://sindresorhus.com/devtools-detect/index.js"></script>
@@ -86,7 +88,7 @@
 		</video>
 		<div class="center menu">
             <h2>Projects</h2>
-            <a href="javascript:/" onclick="document.getElementById('1').style.display='block'">Этот сайт :D</a>
+            <a href="javascript:/" onclick="document.getElementById('1').style.display='block'">This site :D</a>
             <a href="javascript:/" onclick="document.getElementById('2').style.display='block'">VedmakGameBot</a>
             <a href="javascript:/" onclick="document.getElementById('3').style.display='block'">Site news by django</a>
             <a href="javascript:/" onclick="document.getElementById('4').style.display='block'">Telegram bot "Advertising Exchange"</a>
@@ -94,11 +96,4 @@
             <a href="..">Go back</a>
 		</div>
     </body>
-    <script>
-		
-        if (getComputedStyle(document.body).getPropertyValue('--has-pasxalka-work') == "true") {
-            if(window.devtools.isOpen) { window.location.href = getComputedStyle(document.body).getPropertyValue('--pasxalka'); }
-            window.addEventListener('devtoolschange', event => { window.location.href = getComputedStyle(document.body).getPropertyValue('--pasxalka'); });
-        }
-    </script>
 </html>
