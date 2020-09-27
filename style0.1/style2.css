@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+body{
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	font-family: 'Rowdies', sans-serif;
+	color: #ffffff;
+}
+.updateTime{
+	color: #ffffff;
+}
+.banner
+{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+.banner .content{
+	position: relative;
+	z-index: 1;
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+.banner .content h1
+{
+	margin: 0;
+	padding: 0;
+	font-size: 4.5em;
+	text-transform: uppercase;
+	color: #fff;
+}
+.banner .content p
+{
+	font-size: 1.5em;
+	color: #fff;
+}
+.block1{
+	border-radius: 1.5em;
+    border: blueviolet solid 1px;
+	max-width: 700px;
+	padding: 50px;
+	background: rgba(255,255,255,.2);
+	box-shadow: 0 5px 15px rgba(0,0,0.5);
+}
+img{
+	width: 10em;
+    height: 10em;
+    border-radius: 5.6em;
+    border: blueviolet solid 2px;
+}
+
+button{
+	color: White;
+	cursor: pointer;
+	background-color: rgba(12,12,12,.65);
+	font-family: monospace;
+	border-color: blueviolet;
+	border-width: 1px;
+	min-width: 150px;
+    width: 150px;
+    height: 6vh;
+    display: absolute;
+    padding: 0px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 20px 0px #000000;
+   -webkit-box-shadow: 1px 1px 20px 0px #000000;
+}
+button:hover{
+	background: #fff6;
+    color: blueviolet;
+}
+hr{
+	border: none;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+h2{
+	font-family: consolas;
+	color: white;
+	overflow: hidden;
+	white-space: nowrap;
+}
+span#title {
+	font-size: 24px;
+	font-weight: bold;
+	text-shadow: 0px 0px 2px #000000;
+	color:white;
+}
+
+span#time {
+	font-size: 16px;
+	text-shadow: 0px 0px 4px #000000;
+}
